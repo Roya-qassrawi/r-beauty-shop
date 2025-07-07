@@ -1,0 +1,66 @@
+:root {
+  --pink-light: #f8bbd0;
+  --pink-medium: #f48fb1;
+  --pink-dark: #880e4f;
+}
+
+body {
+  background-color: #fff0f6;
+  color: var(--pink-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 70px;
+}
+
+.bg-pink {
+  background-color: var(--pink-medium) !important;
+}
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(136, 14, 79, 0.7), rgba(136, 14, 79, 0.7)),
+    url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.category-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-card h4 {
+  color: var(--pink-dark);
+}
+
+.btn-light {
+  color: var(--pink-dark);
+  font-weight: 700;
+}
+
+#products-container .card {
+  border: none;
+  box-shadow: 0 0 15px rgba(136, 14, 79, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#products-container .card:hover {
+  transform: translateY(-5px);
+}
+
+#cart-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-container th,
+#cart-container td {
+  border: 1px solid var(--pink-light);
+  padding: 10px;
+  text-align: center;
+}
+
+#cart-container img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
